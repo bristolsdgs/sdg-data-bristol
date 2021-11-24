@@ -1,0 +1,91 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Access to mobile broadband at home",
+                "Have used the internet in the last 3 months"
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          },
+          {
+            "name": "Ward name",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Ashley",
+                "Avonmouth & Lawrence Weston",
+                "Bedminster",
+                "Bishopston & Ashley Down",
+                "Bishopsworth",
+                "Brislington East",
+                "Brislington West",
+                "Central",
+                "Clifton",
+                "Clifton Down",
+                "Cotham",
+                "Easton",
+                "Eastville",
+                "Filwood",
+                "Frome Vale",
+                "Hartcliffe & Withywood",
+                "Henbury & Brentry",
+                "Hengrove & Whitchurch Park",
+                "Hillfields",
+                "Horfield",
+                "Hotwells & Harbourside",
+                "Knowle",
+                "Lawrence Hill",
+                "Lockleaze",
+                "Redland",
+                "Southmead",
+                "Southville",
+                "St George Central",
+                "St George Troopers Hill",
+                "St George West",
+                "Stockwood",
+                "Stoke Bishop",
+                "Westbury-on-Trym & Henleaze",
+                "Windmill Hill"
+              ]
+            },
+            "title": "Ward name"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "9-c-1",
+  "title": "Proportion of population covered by a mobile network, by technology"
+}
